@@ -111,7 +111,7 @@ body{
     margin-top: 8px;
 }
 #explicacao-content .container{
-    width: 1290px;
+    max-width: 1100px;
 }
 
 #explicacao-content p{
@@ -133,6 +133,7 @@ body{
 
 #atividades #atividades-content img{
     margin-top: 16px;
+    max-width: 559px;
 }
 
 /*section atividades end*/
@@ -436,8 +437,31 @@ a {
 /* Footer end */
 
 @media screen and (max-width: 768px) {
-  #timeline {
-    margin: 30px;
+    #page-header{
+    max-width: 768px;
+    background-image: url("../Images/CapaHero.png");
+    background-position: 64%;
+}
+
+.btn{
+    padding: 10px;
+    margin: 10px 0;
+    width: 313px;
+    height: 42px;
+}
+
+#page-header #page-header-content{
+    padding: 20px;
+    text-align: center;
+
+}
+
+#atividades img{
+    width: 400px;
+}
+  
+    #timeline {
+    margin: 50px;
     padding: 0px;
     width: 90%;
   }
@@ -454,6 +478,10 @@ a {
     border-left: 0;
     border-right: 7px solid #ee4d4d;
   }
+  #timeline:before {
+    height: 650px;
+  }
+  
   #timeline .timeline-item .timeline-icon {
     left: 0;
   }
