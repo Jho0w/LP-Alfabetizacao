@@ -1,0 +1,460 @@
+:root{
+    --color-title: #AC4403;
+    --color-light-gray: #FEFDF4;
+    --color-botton: #FF7429;
+    --color-botton-hover: #c95a1e;
+    --color-white: #fff;
+    --color-background-item: #F7F3DA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    background-color: var(--color-light-gray);
+}
+
+
+.btn{
+    border-radius: 10px;
+    padding: 17px 40px;
+    font-weight: 700;
+    background-color: var(--color-botton);
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 20px 0;
+    width: 413px;
+    height: 62px;
+    text-align: center;
+}
+
+.btn:hover, .btn:focus{
+    background-color: var(--color-botton-hover);
+    transition: all 0.3s;
+}
+
+#page-header .container{
+    margin: 0;
+    max-width: 1024px;
+}
+
+.section-title{
+    color: var(--color-title);
+    font-weight: 700;
+    font-size: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*page header start*/
+
+#page-header .container{
+    position: relative;
+}
+
+
+#page-header{
+    position: relative;
+    background-color: var(--color-light-black);
+    background-image: url("../LpAlfabetizacao/Images/CapaHero.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 20px;
+    height: 700px;
+}
+
+#page-header #page-header-content{
+    text-align: left;
+    padding: 200px 150px;
+}
+
+
+#page-header #page-header-content h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    width: 377px;
+    height: 118px;
+}
+
+#page-header #page-header-content p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    width: 355px;
+    height: 66px;
+}
+/*page header end*/
+
+/*div explicacao start*/
+#explicacao-content{
+    border-top: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+#explicacao-content .container{
+    width: 1290px;
+}
+
+#explicacao-content p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+/*div explicacao end*/
+
+/*section atividades start*/
+#atividades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+#atividades #atividades-content img{
+    margin-top: 16px;
+}
+
+/*section atividades end*/
+
+/* Linha do tempo start*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#linhaTempo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+#timeline .timeline-item:after, header:after, #timeline .timeline-item:before, header:before {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+
+#timeline {
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+#timeline:before {
+  content: "";
+  width: 1.4px;
+  height: 480px;
+  background: #000000;
+  left: 50%;
+  top: 25px;
+  position: absolute;
+}
+#timeline:after {
+  display: table;
+  width: 100%;
+}
+#timeline .timeline-item {
+  margin-bottom: 80px;
+  position: relative;
+}
+#timeline .timeline-item .timeline-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -33px;
+}
+#timeline .timeline-item .timeline-icon #Layer_4{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -33px;
+}
+#timeline .timeline-item .timeline-icon img {
+  position: relative;
+}
+#timeline .timeline-item .timeline-content {
+  width: 45%;
+  padding: 0 20px;
+  font-size: 13px;
+  text-align: right;
+  margin-bottom: 50px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#timeline .timeline-item .timeline-content h2 {
+  font-size: 20px;
+  text-align: right;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+
+#timeline .timeline-item .timeline-content.timeline-content.right h2 {
+    font-size: 20px;
+    text-align: left;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+
+#timeline .timeline-item .timeline-content:before {
+  content: "";
+  position: absolute;
+  left: 45%;
+  top: 20px;
+  width: 0;
+  height: 0;
+}
+
+#timeline .timeline-item .timeline-content.right {
+  float: right;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+#timeline .timeline-item .timeline-content.right:before {
+  content: "";
+  width: 520px;
+  text-align: left;
+  left: inherit;
+}
+
+/* Linha do Tempo End */
+
+#btn2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Comentarios Start */
+
+#comentarios{
+    margin-top: 80px;
+}
+
+
+#comentarios .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1050px;
+    margin: 15px auto;
+    grid-gap: 25px;
+}
+
+.card{
+    background-color: var(--color-background-item);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+#cardP{
+    height: 380px;
+}
+
+.card .user{
+    width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+#comentarios #comentarios-nome{
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#comentarios .card p{
+    font-size: 15px;
+    line-height: 18px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+/* Comentarios Start */
+
+/* Sobre a Autora start */
+
+#autora{
+    margin-top: 60px;
+    max-width: 1050px;
+    margin: 100px auto;
+    background-color: var(--color-background-item);
+    border-radius: 10px;
+}
+
+#autora-content{
+    margin-top: 15px;
+}
+
+#autora-content .container{
+    display: flex;
+    align-items: center;
+}
+
+#autora-content #autora-content-imagem{
+    margin: 15px 0 15px 15px;
+    border-radius: 10px;
+}
+#autora-content #autora-content-texto{
+    text-indent: 20px;
+    font-size: 20px;
+    line-height: 27px;
+    padding: 15px;
+    text-align: justify;
+}
+
+/* Sobre a Autora end */
+
+/* FAQ - Start */
+
+#d1, #d2, #d3, #d4, #d5, #d6{
+    display: none;
+}
+  
+#faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.faq1{
+    display: inline-block;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+#faq .container{
+    max-width: 1050px;
+    padding: 2px;
+    border-radius: 9px;
+    background-color: var(--color-background-item);
+    display: grid;
+    grid-template-areas:
+     'titulo botao'
+     'descricao descricao'
+    ;
+}
+  
+.titulo{
+    padding: 8px 16px;
+    width: 980px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+}
+  
+.botao button{
+    border: 0;
+    padding: 15px;
+    cursor: pointer;
+    background-color: var(--color-background-item);
+}
+
+.descricao{
+    padding: 5px 16px 16px 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+  
+/* FAQ - End */
+
+/* Footer start */
+.containerFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+#logoBenjamin{
+    width: 80px;
+}
+
+#direitos{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/* Footer end */
+
+@media screen and (max-width: 768px) {
+  #timeline {
+    margin: 30px;
+    padding: 0px;
+    width: 90%;
+  }
+  #timeline:before {
+    left: 0;
+  }
+  #timeline .timeline-item .timeline-content {
+    width: 90%;
+    float: right;
+  }
+  #timeline .timeline-item .timeline-content:before, #timeline .timeline-item .timeline-content.right:before {
+    left: 10%;
+    margin-left: -6px;
+    border-left: 0;
+    border-right: 7px solid #ee4d4d;
+  }
+  #timeline .timeline-item .timeline-icon {
+    left: 0;
+  }
+}
