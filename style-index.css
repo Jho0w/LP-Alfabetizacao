@@ -440,10 +440,10 @@ a {
 @media screen and (max-width: 768px) {
     #page-header{
     max-width: 768px;
-    background-image: url("..LpAlfabetizacao/Images/CapaHerocell.png");
+    background-image: url("../LpAlfabetizacao/Images/CapaHerocell.png");
     background-position: 68%;
 }
-
+ 
 .btn{
     padding: 10px;
     margin: 15px 5px;
@@ -484,7 +484,7 @@ a {
     border-right: 7px solid #ee4d4d;
   }
   #timeline:before {
-    height: 650px;
+    height: 85%;
   }
   #timeline .timeline-item .timeline-icon {
     left: 0;
@@ -496,6 +496,7 @@ a {
   #comentarios .container{
     grid-template-columns: repeat(1, 1fr);
     max-width: 70%;
+    height: 100%;
 }
 #autora{
     max-width: 90%;
