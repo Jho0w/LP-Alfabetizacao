@@ -498,6 +498,10 @@ a {
     max-width: 70%;
     height: 100%;
 }
+
+#cardP{
+    height: 100%;
+}
 #autora{
     max-width: 90%;
 }
