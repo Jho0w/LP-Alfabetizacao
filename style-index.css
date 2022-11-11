@@ -103,22 +103,45 @@ body{
 /*div explicacao start*/
 #explicacao-content{
     border-top: 24px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-top: 8px;
+    background-image: url("Images/Fundo.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    align-items: center;
 }
 #explicacao-content .container{
-    max-width: 80%;
+    max-width: 70%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
 }
 
-#explicacao-content p{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
+#explicacao-content #explicacao-texto{
+    font-size: 20px;
+    line-height: 36px;
+    color: #AC4403;
+    text-align: right;
+    max-width: 30%;
+    padding: 20px;
+}
+
+#linha-vertical {
+    height: 300px;
+    width: 0px;
+    border: 2px solid #AC4403;
+    border-radius: 10px;
+}
+
+#explicacao-video{
+    padding: 20px;
+}
+
+#video{
+    max-height: 450px;
+    border: 3px solid #AC4403;
+    border-radius: 10px;
 }
 /*div explicacao end*/
 
@@ -307,7 +330,7 @@ a {
 }
 
 #cardP{
-    height: 380px;
+    height: 80%;
 }
 
 .card .user{
@@ -455,6 +478,28 @@ a {
     padding: 20px;
     text-align: center;
 
+}
+
+
+#explicacao-content .container{
+    flex-direction: column;
+    max-width: 90%;
+}
+
+#explicacao-content #explicacao-texto{
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 100%;
+}
+
+#linha-vertical {
+    display: none;
+}
+
+#video{
+    justify-content: center;
+    align-items: center;
 }
 
 #atividades img{

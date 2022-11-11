@@ -16,21 +16,6 @@
 
 <body>
     
-    <script type="text/javascript">
-        function leiaMais(id, img) {
-
-        var idFaq = document.getElementById(id);
-
-        if (idFaq.style.display == "none") {
-            document.getElementById(id).style.display = "block";
-            document.getElementById(img).src = './Images/up_fill.png';
-        } else {
-            document.getElementById(id).style.display = "none";
-            document.getElementById(img).src = './Images/down_fill.png';
-        }
-        }
-    </script>
-    
     <header id="page-header">
         <div class="container">
             <div id="page-header-content">
@@ -42,13 +27,17 @@
     </header>
 
     <main>
-
         <div id="explicacao-content">
             <div class="container">
-                <p>
-                    Você sabia que mais da metade das crianças brasileiras chegam ao final do 3º Ano do Ensino Fundamental sem saber ler? Esse resultado é consequência do péssimo método de alfabetização das escolas brasileiras. A forma com que as crianças são alfabetizadas hoje aumenta para 4 anos, o que poderia ser feito em 4 meses, prolongando o tempo de aprendizado natural do cérebro da criança.
-                    <br>Investigamos porque nos países que aparecem na 1º posição no PISA, como EUA, Inglaterra e Finlândia as crianças se alfabetizam de forma mais rápida e efetiva, e, descobrimos que a resposta está nos materiais utilizados em sala. Esse material foi criado com base nessa metodologia cientificamente comprovada. Alfabetize seu (sua) filho (a) ou aluno em 4 meses, investindo apenas 30 minutos por dia!
-                </p>
+                <div id="explicacao-texto">
+                    <h2>Procuram-se pais e professores que queiram mudar a vida de uma criança</h2>
+                </div>
+                <div id="linha-vertical"></div>
+                <div id="explicacao-video">
+                    <video id="video" height="400px" controls="controls">>
+                    <source src="./Images/video.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
         </div>
 
@@ -178,6 +167,21 @@
         </section>
 
         <section id="faq">
+
+            <script type="text/javascript">
+                function leiaMais(id, img) {
+        
+                var idFaq = document.getElementById(id);
+        
+                if (idFaq.style.display == "none") {
+                    document.getElementById(id).style.display = "block";
+                    document.getElementById(img).src = './Images/up_fill.png';
+                } else {
+                    document.getElementById(id).style.display = "none";
+                    document.getElementById(img).src = './Images/down_fill.png';
+                }
+                }
+            </script>
 
             <div class="faq1">
                 <div class="container">
