@@ -7,6 +7,10 @@
     --color-background-item: #F7F3DA;
 }
 
+body, html {
+    overflow-x: hidden !important;
+    }
+
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +32,7 @@ body{
     color: var(--color-white);
     text-decoration: none;
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
     margin: 20px 0;
     width: 413px;
     height: 62px;
@@ -42,7 +46,7 @@ body{
 
 #page-header .container{
     margin: 0;
-    max-width: 1024px;
+    width: 1024px;
 }
 
 .section-title{
@@ -65,7 +69,7 @@ body{
 #page-header{
     position: relative;
     background-color: var(--color-light-black);
-    background-image: url("../LpAlfabetizacao/Images/CapaHero.png");
+    background-image: url("../Images/CapaHero.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -103,7 +107,7 @@ body{
 /*div explicacao start*/
 #explicacao-content{
     border-top: 24px;
-    background-image: url("../LpAlfabetizacao/Images/Fundo.png");
+    background-image: url("../Images/Fundo.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -460,12 +464,29 @@ a {
 /* Footer end */
 
 @media screen and (max-width: 768px) {
-    #page-header{
-    max-width: 768px;
-    background-image: url("../LpAlfabetizacao/Images/CapaHerocell.png");
-    background-position: 68%;
+
+
+#page-header{
+max-width: 100%;
+background-image: url("../Images/CapaHerocell.png");
 }
- 
+
+#explicacao-content .container{
+    flex-direction: column;
+    max-width: 90%;
+    justify-content: center;
+}
+
+#page-header #page-header-content{
+    padding: 20px;
+    text-align: center;
+    max-width: 90%;
+}
+
+#page-header-escrito{
+    max-width: 100%;
+}
+
 .btn{
     padding: 10px;
     margin: 15px 5px;
@@ -473,16 +494,16 @@ a {
     height: 50px;
 }
 
-#page-header #page-header-content{
-    padding: 20px;
-    text-align: center;
-
+#page-header #page-header-content h2{
+    font-size: 28px;
+    width: 300px;
 }
 
-
-#explicacao-content .container{
-    flex-direction: column;
-    max-width: 90%;
+#page-header #page-header-content p{
+    font-size: 18px;
+    line-height: 22px;
+    width: 280px;
+    height: 100%;
 }
 
 #explicacao-content #explicacao-texto{
@@ -505,7 +526,7 @@ a {
     width: 400px;
 }
   
-    #timeline {
+  #timeline {
     margin: 50px;
     padding: 0px;
     width: 90%;
@@ -576,7 +597,5 @@ a {
     line-height: 15px;
     width: 100%;
 }
-
-
 
 }
