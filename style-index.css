@@ -7,10 +7,6 @@
     --color-background-item: #F7F3DA;
 }
 
-body, html {
-    overflow-x: hidden !important;
-    }
-
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +28,7 @@ body{
     color: var(--color-white);
     text-decoration: none;
     text-transform: uppercase;
-    display: block;
+    display: inline-block;
     margin: 20px 0;
     width: 413px;
     height: 62px;
@@ -46,7 +42,7 @@ body{
 
 #page-header .container{
     margin: 0;
-    width: 1024px;
+    max-width: 1024px;
 }
 
 .section-title{
@@ -69,7 +65,7 @@ body{
 #page-header{
     position: relative;
     background-color: var(--color-light-black);
-    background-image: url("../Images/CapaHero.png");
+    background-image: url("../Images/CapaHero.svg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -107,62 +103,25 @@ body{
 /*div explicacao start*/
 #explicacao-content{
     border-top: 24px;
-    background-image: url("../Images/Fundo.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    margin-top: 8px;
 }
 #explicacao-content .container{
-    max-width: 70%;
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
+    width: 1290px;
 }
 
-#explicacao-content #explicacao-texto{
-    font-size: 20px;
-    line-height: 36px;
-    color: #AC4403;
-    text-align: right;
-    max-width: 30%;
-    padding: 20px;
-}
-
-#linha-vertical {
-    height: 300px;
-    width: 0px;
-    border: 2px solid #AC4403;
-    border-radius: 10px;
-}
-
-#explicacao-video{
-    padding: 20px;
-}
-
-#video{
-    max-height: 450px;
-    border: 3px solid #AC4403;
-    border-radius: 10px;
+#explicacao-content p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
 }
 /*div explicacao end*/
 
-/*section atividades start*/
-#atividades{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-}
-
-#atividades #atividades-content img{
-    margin-top: 16px;
-    max-width: 559px;
-}
-
-/*section atividades end*/
 
 /* Linha do tempo start*/
 
@@ -293,12 +252,25 @@ a {
   left: inherit;
 }
 
-#timeline #Layer_4{
-    height: 115px;
-    width: 130px;
+/* Linha do Tempo End */
+
+
+/*section atividades start*/
+#atividades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
 }
 
-/* Linha do Tempo End */
+#atividades #atividades-content img{
+    margin-top: 16px;
+}
+
+/*section atividades end*/
+
+
 
 #btn2{
     display: flex;
@@ -333,7 +305,7 @@ a {
 }
 
 #cardP{
-    height: 80%;
+    height: 380px;
 }
 
 .card .user{
@@ -393,6 +365,10 @@ a {
 /* Sobre a Autora end */
 
 /* FAQ - Start */
+
+#d1, #d2, #d3, #d4, #d5, #d6{
+    display: none;
+}
   
 #faq{
     display: flex;
@@ -443,91 +419,67 @@ a {
   
 /* FAQ - End */
 
+
+
 /* Footer start */
-.containerFooter{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.footer{
+    background-color: var(--color-background-item);
+    height: 130px;
     margin-top: 80px;
+    display: flex;
+    justify-content: center;
 }
 
-#logoBenjamin{
-    width: 80px;
+.containerFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 77%;
+    height: 100px;
+    margin-top: 30px;
+}
+
+#footerEmpresa{
+    width: 33%;
+    font-size: 13px;
+}
+
+#footerLogo{
+    width: 33%;
+    text-align: center;
 }
 
 #direitos{
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 10px;
+    margin-top: -20px;
+    font-size: 12px;
 }
+
+#logoBenjamin{
+    height: 80px;
+}
+
+#footerRedes{
+    width: 33%;
+    display: flex;
+    justify-content: end;
+}
+
+.containerRedes{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+#insta, #facebook, #whatsapp, #mail, #youtube{
+    width: 35px;
+}
+
 /* Footer end */
 
 @media screen and (max-width: 768px) {
-
-
-#page-header{
-max-width: 100%;
-background-image: url("../Images/CapaHerocell.png");
-}
-
-#explicacao-content .container{
-    flex-direction: column;
-    max-width: 90%;
-    justify-content: center;
-}
-
-#page-header #page-header-content{
-    padding: 20px;
-    text-align: center;
-    max-width: 90%;
-}
-
-#page-header-escrito{
-    max-width: 100%;
-}
-
-.btn{
-    padding: 10px;
-    margin: 15px 5px;
-    width: 313px;
-    height: 50px;
-}
-
-#page-header #page-header-content h2{
-    font-size: 28px;
-    width: 300px;
-}
-
-#page-header #page-header-content p{
-    font-size: 18px;
-    line-height: 22px;
-    width: 280px;
-    height: 100%;
-}
-
-#explicacao-content #explicacao-texto{
-    font-size: 15px;
-    line-height: 24px;
-    text-align: center;
-    max-width: 100%;
-}
-
-#linha-vertical {
-    display: none;
-}
-
-#video{
-    justify-content: center;
-    align-items: center;
-}
-
-#atividades img{
-    width: 400px;
-}
-  
   #timeline {
-    margin: 50px;
+    margin: 30px;
     padding: 0px;
     width: 90%;
   }
@@ -537,10 +489,6 @@ background-image: url("../Images/CapaHerocell.png");
   #timeline .timeline-item .timeline-content {
     width: 90%;
     float: right;
-    text-align: left;
-  }
-  #timeline .timeline-item .timeline-content h2{
-    text-align: left;
   }
   #timeline .timeline-item .timeline-content:before, #timeline .timeline-item .timeline-content.right:before {
     left: 10%;
@@ -548,54 +496,10 @@ background-image: url("../Images/CapaHerocell.png");
     border-left: 0;
     border-right: 7px solid #ee4d4d;
   }
-  #timeline:before {
-    height: 85%;
-  }
   #timeline .timeline-item .timeline-icon {
     left: 0;
   }
-  #timeline .timeline-item .timeline-icon #Layer_4{
-    width: 110px;
-    margin-left: -20px;
-}
-  #comentarios .container{
-    grid-template-columns: repeat(1, 1fr);
-    max-width: 70%;
-    height: 100%;
-}
-
-#cardP{
-    height: 100%;
-}
-#autora{
-    max-width: 90%;
-}
-#autora-content .container{
-    display: flex;
-    flex-direction: column;
-}
-
-#faq{
-    width: 95%;
-    margin-left: 2%;
-}
-
-#faq .container{
-    width: 350px;
-    padding: 15px;
-}
-  
-.titulo{
-    width: 90%;
-    font-size: 17px;
-    line-height: 25px;
-}
-
-.descricao{
-    padding: 5px 8px 8px 8px;
-    font-size: 15px;
-    line-height: 15px;
+  .containerFooter{
     width: 100%;
-}
-
+  }
 }

@@ -16,43 +16,41 @@
 
 <body>
     
+    <script type="text/javascript">
+        function leiaMais(id, img) {
+
+        var idFaq = document.getElementById(id);
+
+        if (idFaq.style.display == "none") {
+            document.getElementById(id).style.display = "block";
+            document.getElementById(img).src = './Images/up_fill.png';
+        } else {
+            document.getElementById(id).style.display = "none";
+            document.getElementById(img).src = './Images/down_fill.png';
+        }
+        }
+    </script>
+    
     <header id="page-header">
         <div class="container">
             <div id="page-header-content">
-                <div id="page-header-escrito">
-                    <h2>Ensine seu (sua) filho (a) a ler e escrever em apenas 4 meses. </h2>
-                    <p>O método mais utilizado em todo o mundo e comprovado cientificamente por vários especialistas.</p>
-                </div>
-                <div>
-                    <a href="https://pay.hotmart.com/D73232136N" class="btn">Garanta aqui</a>
-                </div>
+                <h2>Ensine seu (sua) filho (a) a ler e escrever em apenas 4 meses. </h2>
+                <p>O método mais utilizado em todo o mundo e comprovado cientificamente por vários especialistas.</p>
+                <a href="https://hotmart.com/pt-br/marketplace/produtos/colecao-para-alfabetizacao-metodo-fonico-alfa-sons/D73232136N" class="btn">Compre Aqui</a>
             </div>
         </div>
     </header>
 
     <main>
+
         <div id="explicacao-content">
             <div class="container">
-                <div id="explicacao-texto">
-                    <h2>Procuram-se pais e professores que queiram mudar a vida de uma criança</h2>
-                </div>
-                <div id="linha-vertical"></div>
-                <div id="explicacao-video">
-                    <video id="video" height="400px" controls="controls">>
-                    <source src="./Images/video.mp4" type="video/mp4">
-                    </video>
-                </div>
+                <p>
+                    Você sabia que mais da metade das crianças brasileiras chegam ao final do 3º Ano do Ensino Fundamental sem saber ler? Esse resultado é consequência do péssimo método de alfabetização das escolas brasileiras. A forma com que as crianças são alfabetizadas hoje aumenta para 4 anos, o que poderia ser feito em 4 meses, prolongando o tempo de aprendizado natural do cérebro da criança.
+                    <br>Investigamos porque nos países que aparecem na 1º posição no PISA, como EUA, Inglaterra e Finlândia as crianças se alfabetizam de forma mais rápida e efetiva, e, descobrimos que a resposta está nos materiais utilizados em sala. Esse material foi criado com base nessa metodologia cientificamente comprovada. Alfabetize seu (sua) filho (a) ou aluno em 4 meses, investindo apenas 30 minutos por dia!
+                </p>
             </div>
         </div>
-
-        <section id="atividades">
-            <div class="container">
-                <div id="atividades-content">
-                    <h2 class="section-title">Principais Atividades</h2>
-                    <img src="./Images/quebracabeca_colorido_escrito.png"/>
-                </div>
-            </div>
-        </section>
 
         <section id="linhaTempo">
             <div class="container">
@@ -104,7 +102,7 @@
 
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img id="Layer_4" src="./Images/MaterialApoio1.png">
+                            <img id="Layer_4" src="./Images/MaterialApoio1.png" height="115px" width="130px">
                         </div>
                         <div class="timeline-content right">
                             <h2>Material de Apoio</h2>
@@ -119,9 +117,18 @@
             </div>
         </section>
 
+        <section id="atividades">
+            <div class="container">
+                <div id="atividades-content">
+                    <h2 class="section-title">Principais Atividades</h2>
+                    <img src="./Images/quebracabecaEscrito.png" width=559px height:=559px />
+                </div>
+            </div>
+        </section>
+
 
         <div id="btn2">
-            <a href="https://pay.hotmart.com/D73232136N" class="btn">Garanta aqui</a>
+            <a href="https://hotmart.com/pt-br/marketplace/produtos/colecao-para-alfabetizacao-metodo-fonico-alfa-sons/D73232136N" class="btn">Compre Aqui</a>
         </div>
 
         <section id="comentarios">
@@ -171,21 +178,6 @@
         </section>
 
         <section id="faq">
-
-            <script type="text/javascript">
-                function leiaMais(id, img) {
-        
-                var idFaq = document.getElementById(id);
-        
-                if (idFaq.style.display == "none") {
-                    document.getElementById(id).style.display = "block";
-                    document.getElementById(img).src = './Images/up_fill.png';
-                } else {
-                    document.getElementById(id).style.display = "none";
-                    document.getElementById(img).src = './Images/down_fill.png';
-                }
-                }
-            </script>
 
             <div class="faq1">
                 <div class="container">
@@ -262,17 +254,56 @@
         </section>
 
         <div id="btn2">
-            <a href="https://pay.hotmart.com/D73232136N" class="btn">Garanta aqui</a>
+            <a href="https://hotmart.com/pt-br/marketplace/produtos/colecao-para-alfabetizacao-metodo-fonico-alfa-sons/D73232136N" class="btn">Compre aqui</a>
         </div>
 
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="containerFooter">
-            <a href="https://benjamintraining.proluno.com.br/"><img id="logoBenjamin" src="./Images/LogoBenjamin.png"></a>
-            <span id="direitos">Todos os direitos reservados</span>
+            <div id="footerEmpresa">
+                <p>CPNJ: 36.413.074/0001-05</p>
+                <p>Geração do BEN Tutores</p>
+            </div>
+            <div id="footerLogo">
+                <a href="https://benjamintraining.proluno.com.br/"><img id="logoBenjamin" src="./Images/LogoBenjamin.png"></a>
+                <p id="direitos">Todos os direitos reservados</p>
+            </diV>
+            <div id="footerRedes">
+                <div class="containerRedes">
+                    <div><a href="https://instagram.com/professorakatiaevans?igshid=Mzc0YWU1OWY="><img id="insta" src="./Images/ins_line.svg"></a></div>
+                    <div><a href="https://www.facebook.com/profile.php?id=100014750855540&mibextid=ZbWKwL"><img id="facebook" src="./Images/facebook_line.svg"></a></div>
+                    <div><a href="https://youtu.be/a43VphhkqIU"><img id="youtube" src="./Images/youtube_line.svg"></a></div>
+                    <div><a href="mailto:suporte@alfabetizacaorapida.com?subject=Letrinhas Falantes"><img id="mail" src="./Images/mail_line.svg"></a></div>
+                    <div><a href="https://wa.me/message/NAHZWSWD6UTEH1"><img id="whatsapp" src="./Images/whatsapp_line.svg"></a></div>
+                </div>
+
+            </div>
         </div>
+
     </footer>
+
+    <!--<footer>
+        <div class="footer">
+            <div class="containerFooter">
+                <div id="footer-empresa" class="footer-empresa">
+                    <p>CPNJ: 36.413.074/0001-05</p>
+                    <p>Geração do BEN Tutores</p>
+                </div>
+                <div id="footer-logo">
+                    <a href="https://benjamintraining.proluno.com.br/"><img id="logoBenjamin" src="./Images/LogoBenjamin.png"></a>
+                    <p id="direitos">Todos os direitos reservados</p>
+                </div>
+                <div class="grid grid-template-columns-1">
+                    <div><a href="https://instagram.com/professorakatiaevans?igshid=Mzc0YWU1OWY="><img id="insta" src="./Images/ins_line.svg"></a></div>
+                    <div><a href="https://www.facebook.com/profile.php?id=100014750855540&mibextid=ZbWKwL"><img id="facebook" src="./Images/facebook_line.svg"></a></div>
+                    <div><a href="https://youtu.be/a43VphhkqIU"><img id="youtube" src="./Images/youtube_line.svg"></a></div>
+                    <div><a href="suporte@alfabetizacaorapida.com"><img id="mail" src="./Images/mail_line.svg"></a></div>
+                    <div><a href="https://wa.me/message/NAHZWSWD6UTEH1"><img id="whatsapp" src="./Images/whatsapp_line.svg"></a></div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
 </body>
 
 </html>
